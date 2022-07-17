@@ -2,6 +2,6 @@
 
 > https://move-net.vercel.app/
 <br/>
-## to do :
+## todo 
 - add loading screen
 - display data on webpage
