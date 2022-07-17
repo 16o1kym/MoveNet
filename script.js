@@ -72,9 +72,10 @@ img_file.addEventListener ("change", (e)=>{
 
 const get_data = () =>{
     console.log("Logic to get data points");
-    get_data_btn.disabled = true;
+
 
     get_data_btn.addEventListener("click" , async (e)=>{
+        get_data_btn.disabled = true;
         const detector = await poseDetection.createDetector(poseDetection.SupportedModels.MoveNet);
         const poses = await detector.estimatePoses(canvas);
         console.log(poses[0])
